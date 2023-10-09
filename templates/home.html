@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci</title>
+</head>
+<body style="background-color:azure;">
+    <div class="exterior">
+        <div class="cuadro">
+            <p class="titulo">Serie de Fibonacci</p>
+            <p>Ingresar el término "n" a mostrar de fibonacci</p>
+            <form action = "http://localhost:5000/resultado" method = "POST">
+                <label for="firstname">Termino: </label>
+                <input class="entrada" type = "number" name = "fibo" />
+                <button class="boton" type="submit">Mostrar</button>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+<style>
+    .exterior{
+        padding: 10% 0;
+    }
+    .cuadro{
+        margin: auto;
+        width: 30%;
+        position: relative;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+        background-color:darkslategray;
+        color: aliceblue;
+        border-radius: 10px;
+        border: 1px solid gray;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .boton{
+        background-color: indianred;
+        color: aliceblue;
+        padding: 5px;
+        box-shadow: none;
+        border-radius: 2px;
+        border: 1px solid indianred;
+        
+    }
+    .boton:hover{
+        border-radius: 2px;
+        background-color: darkslategray;
+        border: 1px solid aliceblue;
+        color: indianred;
+    }
+
+    .entrada{
+        background-color: darkslategray;
+        border: 1px solid aliceblue;
+        color: aliceblue;
+        text-align: center;
+        height: 22px;
+        border-radius: 2px;
+
+    }
+    .titulo{
+        font-size: 20px;
+        font-style: bold;
+    }
+</style>
+
+</html>
+
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Fibonacci</title>
+</head>
+<body style="background-color:azure;">
+   <div class="exterior">
+      <div class="cuadro">
+         <p class="titulo">Serie de Fibonacci</p>
+         <p> El n-esimo término de fibonacci es: {{ resultado }} </p>
+         <a class="boton" href="{{ url_for('home') }}">Atras</a>
+         
+      </div>
+   </div>
+</body>
+<style>
+
+    .exterior{
+        padding: 10% 0;
+    }
+   
+   .cuadro{
+
+      margin: auto;
+        width: 30%;
+        position: relative;
+        word-break: break-all;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+        background-color:darkslategray;
+        color: aliceblue;
+        border-radius: 10px;
+        border: 1px solid gray;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   }
+
+   .boton{
+        background-color: indianred;
+        color: aliceblue;
+        padding: 5px;
+        box-shadow: none;
+        border: 1px solid indianred;
+        border-radius: 2px;
+        
+    }
+    .boton:hover{
+        background-color: darkslategray;
+        border: 1px solid aliceblue;
+        color: indianred;
+        border-radius: 2px;
+   }
+
+
+    .titulo{
+        font-size: 20px;   
+   }
+
+</style>
+
+</html>
+
+
+
