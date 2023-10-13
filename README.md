@@ -9,6 +9,9 @@ Librería usada para la creación de aplicaciones web, se instala con:
 pip install flask
 ```
 
+## Como usar
+Luego de instalar la librería flask, ejecutar el archivo `app.py` ya sea con `ctrl+F5` o `ctrl+shift+D`. Por último hacer `ctrl+click` en el enlace generado en la terminal, o ingresar manualmente a ´[http:](http://localhost:5000)´.
+
 ## Problema a Solucionar
 Creación de un API que implemente el cálculo de la secuencia de Fibonacci utilizando programación dinámica. La API debe aceptar un número n como parámetro y devolver el n-ésimo término de la secuencia de Fibonacci.
 
